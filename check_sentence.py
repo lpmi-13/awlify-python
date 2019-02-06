@@ -6,6 +6,9 @@ nlp = spacy.load('en_core_web_sm')
 
 
 def check_word_in_sentence(sentence):
+    if not isinstance(sentence, str):
+        raise Exception('input must be a string')
+
     doc = nlp(sentence)
 
     tokenized = [token.text for token in doc]
@@ -13,7 +16,7 @@ def check_word_in_sentence(sentence):
 
     for word in tokenized:
         if (check_word_in_list(word) is not None):
-            index = sentence.index(word)
+            index = tokenized.index(word)
             awl_words.append({
                 'index': index,
                 'word': word,

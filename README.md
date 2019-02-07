@@ -1,5 +1,9 @@
 # Awlify
 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python3.6-1f425f.svg)](https://www.python.org/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/lpmi-13/awlify-python/blob/master/LICENSE)
+
+
 A very basic tool that takes in a sentence of text and outputs
 the same text, annotated with information about whether any of
 its words are in the [Academic Word List](https://www.victoria.ac.nz/lals/resources/academicwordlist/information).

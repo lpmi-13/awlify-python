@@ -1,5 +1,5 @@
 import unittest
-from utils.check_word import check_word_in_list
+from awlify.utils.check_word import check_word_in_list
 
 
 class CheckWordTest(unittest.TestCase):

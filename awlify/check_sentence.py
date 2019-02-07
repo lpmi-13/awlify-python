@@ -1,4 +1,4 @@
-from utils.check_word import check_word_in_list
+from awlify.utils.check_word import check_word_in_list
 import json
 import spacy
 

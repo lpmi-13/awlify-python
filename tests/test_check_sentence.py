@@ -1,5 +1,5 @@
 import unittest
-from check_sentence import check_word_in_sentence
+from awlify.check_sentence import check_word_in_sentence
 
 
 class TestCheckSentence(unittest.TestCase):

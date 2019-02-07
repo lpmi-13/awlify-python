@@ -9,7 +9,8 @@ README = (HERE / "README.md").read_text()
 setup(
     name="awlify",
     version="1.0.0",
-    description="a simple utility to take in a sentence and output information about the AWL words in it",
+    description="a simple utility to take in a sentence and "
+                "output information about the AWL words in it",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/lpmi-13/awlify-python",

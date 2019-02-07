@@ -13,7 +13,7 @@ class CheckWordTest(unittest.TestCase):
         word = 'economical'
         expected = {'head': 'economy', 'sublist': 1}
         result = check_word_in_list(word)
-        self.assertEqual(expected, result) 
+        self.assertEqual(expected, result)
 
     def test_empty_input(self):
         word = ''

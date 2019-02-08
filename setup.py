@@ -8,7 +8,7 @@ README = (HERE / "README.md").read_text()
 # calls setup() to install
 setup(
     name="awlify",
-    version="1.0.0",
+    version="1.1.0",
     description="a simple utility to take in a sentence and "
                 "output information about the AWL words in it",
     long_description=README,
@@ -20,7 +20,7 @@ setup(
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "Programming Language "" Python :: 3.6",
+        "Programming Language :: Python :: 3.6",
     ],
     packages=find_packages(exclude=('tests',)),
     install_requires=["spacy>=2.0.16"],

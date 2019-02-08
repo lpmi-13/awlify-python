@@ -11,6 +11,11 @@ its words are in the [Academic Word List](https://www.victoria.ac.nz/lals/resour
 ## installing
 `pip install awlify`
 
+and if you haven't used spacy on your system before, you'll need
+to install the model we're using here with the command below:
+
+`python -m spacy download en_core_web_sm`
+
 ## tests
 `python -m unittest`
 

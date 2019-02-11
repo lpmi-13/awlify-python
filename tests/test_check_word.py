@@ -9,7 +9,13 @@ class CheckWordTest(unittest.TestCase):
         result = check_word_in_list(word)
         self.assertEqual(result, None)
 
-    def test_word_in_awl(self):
+    def test_head_word_in_awl(self):
+        word = 'economy'
+        expected = {'head': 'economy', 'sublist': 1}
+        result = check_word_in_list(word)
+        self.assertEqual(expected, result)
+
+    def test_sublist_word_in_awl(self):
         word = 'economical'
         expected = {'head': 'economy', 'sublist': 1}
         result = check_word_in_list(word)

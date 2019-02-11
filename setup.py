@@ -8,7 +8,7 @@ README = (HERE / "README.md").read_text()
 # calls setup() to install
 setup(
     name="awlify",
-    version="1.1.0",
+    version="1.1.1",
     description="a simple utility to take in a sentence and "
                 "output information about the AWL words in it",
     long_description=README,

@@ -19,29 +19,34 @@ to install the model we're using here with the command below:
 ## tests
 `python -m unittest`
 
-## command usage
+## usage inside a file
 ```
 from awlify import awlify
 
 result = awlify('please inform me of the academic words in this sentence')
 
 print(result)
-{'data': {'sentence': 'please inform me of the academic words in this sentence', 'awl_words': [{'index': 5, 'word': 'academic', 'meta': {'head': 'academy', 'sublist': 5}}]}}
+{"data": {"sentence": "please inform me of the academic words in this sentence", "awl_words": [{"index": 5, "word": "academic", "meta": {"head": "academy", "sublist": 5}}]}}
 ```
 
+## usage from the command line
+`python -m awlify 'this is a sentence to check'`
+
+`{"data": {"sentence": "this is a sentence to check", "awl_words": []}}`
+
 ## expected input / output
-output format:
+format for output:
 ```
 {
-  'data': {
-    'sentence': 'THIS IS THE ORIGINAL SENTENCE',
-    'awl_words': [
+  "data": {
+    "sentence": "THIS IS THE ORIGINAL SENTENCE",
+    "awl_words": [
       {
-        'index': INDEX_OF_AWL_WORD_FOUND,
-        'word': 'AWL_WORD_FOUND',
-        'meta': {
-          'head': 'THE_HEADWORD_FROM_THE_AWL',
-          'sublist': THE_AWL_SUBLIST_OF_THE_WORD
+        "index": INDEX_OF_AWL_WORD_FOUND,
+        "word": "AWL_WORD_FOUND",
+        "meta": {
+          "head": "THE_HEADWORD_FROM_THE_AWL",
+          "sublist": THE_AWL_SUBLIST_OF_THE_WORD
         }
       }
     ]
@@ -58,9 +63,9 @@ simple_sentence = awlify('this is a sentence')
 example output for a simple sentence (no AWL words):
 ```
 {
-  'data': {
-    'sentence': 'this is a sentence',
-    'awl_words': []
+  "data": {
+    "sentence": "this is a sentence",
+    "awl_words": []
   }
 }
 ```
@@ -73,31 +78,31 @@ complex_sentence = awlify('the economic recovery is ongoing and potentially prob
 example output for a complex sentence (a few AWL words):
 ```
 {
-  'data': {
-    'sentence': 'the economic recovery is ongoing and potentially problematic',
-    'awl_words': [
+  "data": {
+    "sentence": "the economic recovery is ongoing and potentially problematic",
+    "awl_words": [
       {
-        'index': 1,
-        'word': 'economic',
-        'meta': {
-          'head': 'economy',
-          'sublist': 1
+        "index": 1,
+        "word": "economic",
+        "meta": {
+          "head": "economy",
+          "sublist": 1
         }
       },
       {
-        'index': 2,
-        'word': 'recovery',
-        'meta': {
-          'head': 'recover',
-          'sublist': 6
+        "index": 2,
+        "word": "recovery",
+        "meta": {
+          "head": "recover",
+          "sublist": 6
         }
       },
       {
-        'index': 6,
-        'word': 'potentially',
-        'meta': {
-          'head': 'potential',
-          'sublist': 2
+        "index": 6,
+        "word": "potentially",
+        "meta": {
+          "head": "potential",
+          "sublist": 2
         }
       }
     ]
